@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.huangxiaoer.HomeActivity">
+  <!--  <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/saoma"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="@dimen/y30"/>-->
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/y30"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/y30"
+        android:visibility="gone">
+
+    </android.support.v4.view.ViewPager>
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:id="@+id/iv_yuyue"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/y30"
+            android:src="@drawable/yuyue"
+            android:layout_marginLeft="@dimen/x60"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_wode"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/y30"
+            android:src="@drawable/wode"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x60"
+             />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_saoma"
+        android:layout_width="@dimen/x55"
+        android:layout_height="@dimen/y45"
+        android:src="@drawable/saomaorder"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+
+</RelativeLayout>
